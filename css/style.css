@@ -43,20 +43,39 @@ object-fit: cover;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 50px;
-    color: blue;
+    color: rgb(143, 198, 138);
     font-size: 40px;
+    font-weight: 800;
     height: 100%;
 }
 .arrow__next {
     right: 0;
 }
 .arrow:hover {
-background-color: blueviolet;
+color: rgb(33, 243, 14);
+}
+.dots {
+position: absolute;
+bottom: -30px;
+left: 50px;
+right: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
+    background-color: rgb(143, 198, 138);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.dot__active {
+    background-color: rgb(33, 243, 14);;
+}
+.dot:hover {
+background-color: rgb(33, 243, 14);
 }
