@@ -6,23 +6,57 @@ body {
 .slider {
 position: relative;
 margin: 60px auto;
-width: 800px;
-height: 700px;
+width: 600px;
+height: 400px;
 }
-.slider__items {
+.items {
 margin: auto;
 height: 100%;
 }
-.slider__item {
-    width: 800px;
-    height: 600px;
+.item {
+    width: 600px;
+    height: 400px;
     display: none;
 }
-.slider__item_active {
+.item_active {
 display: block;
 }
-.slider__img {
-width: 800px;
-height: 600px;
+.img {
+width: 600px;
+height: 400px;
 object-fit: cover;
+}
+
+.arrows {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    color: blue;
+    font-size: 40px;
+    height: 100%;
+}
+.arrow__next {
+    right: 0;
+}
+.arrow:hover {
+background-color: blueviolet;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
 }
