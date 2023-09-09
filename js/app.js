@@ -35,4 +35,21 @@ prev.onclick = function() {
     getSlider(slideIndex);
     slideIndex=slideIndex===0 ? slider.length -1 : slideIndex -1;
     getSlider(slideIndex);
+};
+
+next.onclick = function() {
+    slideIndex = slider.findIndex((el) =>
+    el.classList.contains('item__active')
+    );
+    getSlider(slideIndex);
+    slideIndex=slideIndex===slider.length -1 ? 0 : slideIndex +1;
+    getSlider(slideIndex);
+};
+
+// функция автослайдер 
+function autoSlider() {
+getSlider(slideIndex);
+slideIndex = slideIndex === slider.length  -1 ? 0 : slideIndex +1;
+    getSlider(slideIndex);
 }
+setInterval(autoSlider, 3000);
