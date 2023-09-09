@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider {
+position: relative;
+margin: 60px auto;
+width: 800px;
+height: 700px;
+}
+.slider__items {
+margin: auto;
+height: 100%;
+}
+.slider__item {
+    width: 800px;
+    height: 600px;
+    display: none;
+}
+.slider__item_active {
+display: block;
+}
+.slider__img {
+width: 800px;
+height: 600px;
+object-fit: cover;
+}
